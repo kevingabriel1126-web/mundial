@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mundiales</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<button id="modoBtn" onclick="cambiarModo()">🌙</button>
+
+<header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <h1>🏆 Mundiales FIFA 1930 - 2022</h1>
+
+<div style="position:relative; display:inline-block;">
+  <input id="buscador" type="number" placeholder="Ej: 1986" oninput="mostrarSugerencias()">
+  <button onclick="buscarMundial()">🔎</button>
+  <div id="sugerencias"></div>
+</div>
+
+
+    <select id="filtroCampeon" onchange="filtrarMundiales()">
+      <option value="">Filtrar por campeón</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Italia">Italia</option>
+      <option value="Alemania">Alemania</option>
+      <option value="Brasil">Brasil</option>
+      <option value="Inglaterra">Inglaterra</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Francia">Francia</option>
+      <option value="España">España</option>
+    </select>
+
+    <select id="filtroSede" onchange="filtrarMundiales()">
+      <option value="">Filtrar por sede</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Italia">Italia</option>
+      <option value="Francia">Francia</option>
+      <option value="Brasil">Brasil</option>
+      <option value="Suiza">Suiza</option>
+      <option value="Suecia">Suecia</option>
+      <option value="Chile">Chile</option>
+      <option value="Inglaterra">Inglaterra</option>
+      <option value="México">México</option>
+      <option value="Alemania">Alemania</option>
+      <option value="Argentina">Argentina</option>
+      <option value="España">España</option>
+      <option value="EEUU">EEUU</option>
+      <option value="Corea">Corea-Japón</option>
+      <option value="Sudáfrica">Sudáfrica</option>
+      <option value="Rusia">Rusia</option>
+      <option value="Qatar">Qatar</option>
+    </select>
+
+    <button id="resetFiltros" onclick="resetFiltros()">🔄 Reset</button>
+</header>
+
+<nav id="menu">
+    <ul id="listaAnios"></ul>
+</nav>
+
+<main id="contenido"></main>
+
+<footer>
+    <p>Proyecto Mundiales</p>
+    <p>Hecho por: Kevin y CHATGPT</p>
+    <p>Año: 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

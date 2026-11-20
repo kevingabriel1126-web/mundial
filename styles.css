@@ -1,0 +1,202 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    transition: 0.4s;
+}
+
+/* 🔝 HEADER */
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 📋 MENU */
+#menu {
+    display: none;
+    background: #333;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background: #555;
+}
+
+/* 📦 SECCIONES */
+.mundial {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.4s;
+    color: white;
+}
+
+/* 🖼️ IMAGEN DEL PAÍS ANFITRIÓN (Bandera) */
+.img-bandera {
+    width: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* 🏆 IMAGEN DEL EQUIPO CAMPEÓN */
+.img-equipo-campeon {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 15px auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* 📊 TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+}
+
+/* 🏆 MVP DESTACADO */
+.mvp {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* 🔻 FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 🌙 MODO OSCURO */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .mundial {
+    filter: brightness(0.8);
+}
+
+/* 🔥 BOTON MODO */
+#modoBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: gold;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#modoBtn:hover {
+    transform: scale(1.2);
+}
+
+/* 🌍 COLORES POR SEDE */
+.uruguay { background: #0a2a66; }
+.italia { background: #2e7d32; }
+.francia { background: #1e3a8a; }
+.brasil { background: #2e7d32; }
+.suiza { background: #b71c1c; }
+.suecia { background: #1565c0; }
+.chile { background: #b71c1c; }
+.inglaterra { background: #4e342e; }
+.mexico { background: #1b5e20; }
+.alemania { background: #212121; }
+.argentina { background: #0288d1; }
+.españa { background: #ffc533; }
+.eeuu { background: #37474f; }
+.corea { background: #6a1b9a; }
+.sudafrica { background: #004d40; }
+.rusia { background: #880e4f; }
+.qatar { background: #6a1b1a; }
+
+/* 🎯 BUSCADOR Y FILTROS */
+#buscador, #filtroCampeon, #filtroSede, #resetFiltros {
+  margin: 5px;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+#resetFiltros {
+  background: crimson;
+  color: white;
+  cursor: pointer;
+}
+
+#resetFiltros:hover {
+  background: darkred;
+}
+
+/* 🔍 AUTOCOMPLETAR */
+#sugerencias {
+  background: white;
+  color: black;
+  position: absolute;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  width: 200px;
+  z-index: 1000;
+}
+#sugerencias div {
+  padding: 5px;
+  cursor: pointer;
+}
+#sugerencias div:hover {
+  background: #eee;
+}
+
+/* ⬆️ BOTÓN VOLVER ARRIBA */
+#btnArriba {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: dodgerblue;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1000;
+}
+#btnArriba:hover {
+  background: navy;
+}
